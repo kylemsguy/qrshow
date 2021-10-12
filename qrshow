@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -eq 1]; then
+if [ $# -eq 1 ]; then
     qrencode "$1" -o - | display
 else
     echo "Usage: $0 [STRING_TO_ENCODE]"
